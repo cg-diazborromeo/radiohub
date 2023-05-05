@@ -1,10 +1,5 @@
-/* .slider {
-  height: 500px;
-  width: 500px;
+.slider {
   position: absolute;
   top: 100%;
-  left: 62%;
-  margin-top: -150px;
-  margin-left: -200px;
-  /* overflow: auto; */
-/* } */
+  z-index: -1;
+}

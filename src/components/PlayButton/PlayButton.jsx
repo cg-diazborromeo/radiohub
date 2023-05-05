@@ -2,7 +2,9 @@ import './PlayButton.css'
 
 const PlayButton = () => {
   return (
-    <button className='play-button'>Play</button>
+    <div className='surround-button'> 
+      <button className='play-button'></button>
+    </div>
   )
 }
 
