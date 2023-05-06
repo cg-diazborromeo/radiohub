@@ -1,5 +1,10 @@
 body {
-  background: #f2655c;
+  background-image: url("../../assets/background-try8.png");
+  background-size: cover;
+  background-position: center;
+  height: 100vh;
+  /* min-height: 100vh; */
+  /* overflow: hidden;  */
 }
 
 .parent-container {
@@ -8,7 +13,7 @@ body {
   justify-content: center;
   align-items: center;
   height: 100%;
-  margin-top: 100px;
+  margin-top: 50px;
   position: relative;
 }
 
@@ -46,4 +51,16 @@ body {
   justify-content: center;
   align-items: center;
   z-index: 2;
+}
+
+.volume-button {
+  margin-top: 50px;
+  width: 200px;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  position: relative;
+  display: flex;
+  justify-content: center;
+  align-items: center;
 }

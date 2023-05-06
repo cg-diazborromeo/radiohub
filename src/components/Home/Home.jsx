@@ -4,6 +4,7 @@ import Vinil from "../Vinil/Vinil";
 import PlayButton from "../PlayButton/PlayButton";
 import Slider from "../Slider/Slider";
 import "./Home.css"
+import VolumeSlider from "../VolumeSlider/VolumeSlider";
 
 const Home = () => {
   return (
@@ -22,6 +23,14 @@ const Home = () => {
             <PlayButton />
           </div>
         </div>
+      </div>
+      <div className="volume-button">
+        <VolumeSlider />
+      </div>
+      <div className="volume-button">ver
+      </div>
+      <div className="volume-button">
+      aca
       </div>
     </>
   )
