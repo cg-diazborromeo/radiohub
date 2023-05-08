@@ -3,7 +3,7 @@ import { collection, onSnapshot } from "firebase/firestore";
 import { db } from "../../Firebase/Firebase";
 
 import { useEffect, useState } from "react";
-import img from "../../Media/vinyl.png";
+import img from "../../Media/vinyl_transparent.png";
 import "./Radios.css";
 
 const Radios = () => {
