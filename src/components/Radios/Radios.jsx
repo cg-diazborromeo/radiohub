@@ -1,6 +1,10 @@
-import { useEffect, useState } from "react";
+//firebase utilites
 import { collection, onSnapshot } from "firebase/firestore";
 import { db } from "../../Firebase/Firebase";
+
+import { useEffect, useState } from "react";
+import img from "../../Media/vinyl.png";
+import "./Radios.css";
 
 const Radios = () => {
   const [radios, setRadios] = useState([]);
@@ -15,9 +19,10 @@ const Radios = () => {
     });
   }, []);
   return (
-    <div>
+    <div className='radios-container'>
       {radios.map((radio) => (
-        <div key={radio.id}>
+        <div className='radios-cart-container' key={radio.id}>
+          <img src={img} alt='vinyl-img' />
           <h2>{radio.name}</h2>
         </div>
       ))}
