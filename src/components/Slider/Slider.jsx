@@ -11,12 +11,10 @@ const Slider = () => {
   const [value, setValue] = useState(0.25)
 
   return (
-		<CircularInput value={value} onChange={setValue}>
-        <CircularTrack strokeWidth={3} stroke="#eee" />
-        <CircularProgress strokeWidth='10' stroke={`hsl(${value * 100}, 100%, 50%)`} />
-        <CircularThumb  fill="white"
-              stroke="rgb(61, 153, 255)"
-              strokeWidth="4" />
+	<CircularInput value={value} onChange={setValue} radius={250}>
+            <CircularTrack strokeWidth={10} stroke="rgb(205,218,226)" />
+            <CircularProgress strokeWidth='10' stroke={`rgba(55, 30, 95, ${value * 100}`} />
+            <CircularThumb fill="white" stroke="rgb(55, 30, 95)"/>
       </CircularInput>
 	)
 }

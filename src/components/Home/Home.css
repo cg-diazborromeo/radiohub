@@ -1,0 +1,66 @@
+body {
+  background-image: url("../../assets/background-try8.png");
+  background-size: cover;
+  background-position: center;
+  height: 100vh;
+  /* min-height: 100vh; */
+  /* overflow: hidden;  */
+}
+
+.parent-container {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  height: 100%;
+  margin-top: 50px;
+  position: relative;
+}
+
+.slider-container {
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  z-index: 1;
+}
+
+.radio-container {
+  position: relative;
+  width: 500px;
+  height: 500px;
+  border-radius: 50%;
+  /* Styles for image container */
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.vinil-container {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.button-container {
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  z-index: 2;
+}
+
+.volume-container {
+  margin-top: 50px;
+  width: 200px;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  position: relative;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
