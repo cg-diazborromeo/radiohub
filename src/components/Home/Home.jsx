@@ -4,7 +4,7 @@ import Vinil from "../Vinil/Vinil";
 import PlayButton from "../PlayButton/PlayButton";
 import Slider from "../Slider/Slider";
 import "./Home.css"
-import VolumeSlider from "../VolumeSlider/VolumeSlider";
+import VolumeSettings from "../VolumeSettings/VolumeSettings";
 
 const Home = () => {
   return (
@@ -24,8 +24,8 @@ const Home = () => {
           </div>
         </div>
       </div>
-      <div className="volume-button">
-        <VolumeSlider />
+      <div className="volume-container">
+        <VolumeSettings />
       </div>
       <div className="volume-button">ver
       </div>

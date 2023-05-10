@@ -1,14 +1,17 @@
 import Slider from 'rc-slider';
+import VolumeButton from '../VolumeButton/VolumeButton';
 import 'rc-slider/assets/index.css';
 import '../../../node_modules/rc-slider/assets/index.css';
 
 
-const VolumeSlider = () => {
+
+const VolumeSettings = () => {
   return (
     <>
+    <VolumeButton />
     <Slider
         defaultValue={30}
-        trackStyle={{ backgroundColor: '#F2655C', height: 5 }}
+        trackStyle={{ backgroundColor: 'black', height: 5 }}
         handleStyle={{
           borderColor: '#F2655C',
           height: 11,
@@ -23,4 +26,4 @@ const VolumeSlider = () => {
   )
 }
 
-export default VolumeSlider
+export default VolumeSettings
