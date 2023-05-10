@@ -1,6 +1,5 @@
 import Slider from 'rc-slider';
 import VolumeButton from '../VolumeButton/VolumeButton';
-import 'rc-slider/assets/index.css';
 import '../../../node_modules/rc-slider/assets/index.css';
 
 
