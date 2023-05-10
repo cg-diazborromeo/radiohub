@@ -5,6 +5,8 @@ import PlayButton from "../PlayButton/PlayButton";
 import Slider from "../Slider/Slider";
 import "./Home.css"
 import VolumeSettings from "../VolumeSettings/VolumeSettings";
+import Radios from "../Radios/Radios";
+
 
 const Home = () => {
   return (
@@ -32,6 +34,7 @@ const Home = () => {
       <div className="volume-button">
       aca
       </div>
+      <Radios />
     </>
   )
 };
