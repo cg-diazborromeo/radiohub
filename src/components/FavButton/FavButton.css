@@ -1,0 +1,11 @@
+.fav-button {
+  width: 30px;
+  height: 30px;
+  margin-left: 10px;
+  margin-right: 10px;
+  border-radius: 50%;
+  background-color: #cddae2;
+  cursor: pointer;
+  pointer-events: auto;
+  position: relative;
+}

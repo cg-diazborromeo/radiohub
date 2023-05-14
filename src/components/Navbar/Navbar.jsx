@@ -9,7 +9,7 @@ const Navbar = () => {
           <h1 className="navbar-logo">RadioHub</h1>
         </Link>
         <Link className="seeFavorites" to={"/favorites"}>
-            @
+        &#8258;
         </Link>
       </nav>
     </div>

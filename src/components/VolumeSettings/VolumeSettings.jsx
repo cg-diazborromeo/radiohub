@@ -1,15 +1,26 @@
+import { useState } from 'react';
 import Slider from 'rc-slider';
 import VolumeButton from '../VolumeButton/VolumeButton';
 import '../../../node_modules/rc-slider/assets/index.css';
+import './VolumeSettings.css'
 
 
 
 const VolumeSettings = () => {
+  const [sliderValue, setSliderValue] = useState(30)
+  
+
+  // const setDisplayTo = () => {
+  //   setDisplay(display === 'none' ? '' : 'none');
+  // };
+
   return (
     <>
-    <VolumeButton />
+    <VolumeButton/>
     <Slider
-        defaultValue={30}
+        // style={{ display: display }}
+        className='slider'
+        defaultValue={sliderValue}
         trackStyle={{ backgroundColor: 'black', height: 5 }}
         handleStyle={{
           borderColor: '#F2655C',
@@ -20,7 +31,11 @@ const VolumeSettings = () => {
           backgroundColor: 'white',
         }}
         railStyle={{ backgroundColor: 'gray', height: 5 }}
+        onChange={setSliderValue}
     />
+    <div className='label-container'>
+      <label>{sliderValue}</label>
+    </div>
   </>
   )
 }

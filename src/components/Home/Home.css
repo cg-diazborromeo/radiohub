@@ -1,10 +1,10 @@
 body {
-  background-image: url("../../assets/background-try8.png");
+  background-image: url("../../assets/background-full-1.png");
   background-size: cover;
   background-position: center;
-  height: 100vh;
-  /* min-height: 100vh; */
-  /* overflow: hidden;  */
+  /* height: 100vh; */
+  min-height: 100vh;
+  /* overflow: hidden; */
 }
 
 .parent-container {
@@ -53,8 +53,32 @@ body {
   z-index: 2;
 }
 
+.settings-container {
+  margin-top: 100px;
+  width: 200px;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  position: relative;
+  /* display: flex; */
+  justify-content: center;
+  /* align-items: center; */
+  /* display: inline-block; */
+}
+
+.n-container {
+  width: 200px;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  position: relative;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
 .volume-container {
-  margin-top: 50px;
+  margin-top: 10px;
   width: 200px;
   top: 50%;
   left: 50%;
