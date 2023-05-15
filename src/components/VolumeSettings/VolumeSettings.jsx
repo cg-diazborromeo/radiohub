@@ -8,6 +8,14 @@ import './VolumeSettings.css'
 
 const VolumeSettings = () => {
   const [sliderValue, setSliderValue] = useState(30)
+  const [volume, setVolume] = useState(true);
+  const volumeSymbol = volume ? <>&#128264;</> : <>&#128263;</>;
+
+  const handleVolumeSettings = () => {
+    setVolume(!volume)
+    volume && setSliderValue(0)
+    !volume && setSliderValue(30)
+  }
   
 
   // const setDisplayTo = () => {
@@ -16,11 +24,11 @@ const VolumeSettings = () => {
 
   return (
     <>
-    <VolumeButton/>
+    <VolumeButton handleVolumeSettings={handleVolumeSettings} volumeSymbol={volumeSymbol}/>
     <Slider
         // style={{ display: display }}
         className='slider'
-        defaultValue={sliderValue}
+        value={sliderValue}
         trackStyle={{ backgroundColor: 'black', height: 5 }}
         handleStyle={{
           borderColor: '#F2655C',

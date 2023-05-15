@@ -36,7 +36,7 @@ body {
   align-items: center;
 }
 
-.vinil-container {
+.vinyl-container {
   display: flex;
   justify-content: center;
   align-items: center;
@@ -66,20 +66,9 @@ body {
   /* display: inline-block; */
 }
 
-.n-container {
-  width: 200px;
-  top: 50%;
-  left: 50%;
-  transform: translate(-50%, -50%);
-  position: relative;
-  display: flex;
-  justify-content: center;
-  align-items: center;
-}
-
 .volume-container {
-  margin-top: 10px;
-  width: 200px;
+  margin-top: 5px;
+  width: 250px;
   top: 50%;
   left: 50%;
   transform: translate(-50%, -50%);

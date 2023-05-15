@@ -1,13 +1,12 @@
 import Banner from "../Banner/Banner";
 import Navbar from "../Navbar/Navbar";
-import Vinil from "../Vinil/Vinil";
+import Vinyl from "../Vinyl/Vinyl";
 import PlayButton from "../PlayButton/PlayButton";
 import CircularSlider from "../CircularSlider/CircularSlider";
-import "./Home.css"
 import VolumeSettings from "../VolumeSettings/VolumeSettings";
 import Radios from "../Radios/Radios";
-import FavButton from "../FavButton/FavButton";
-import NavButton from "../NavButton/NavButton";
+import NavSettings from "../NavSettings/NavSettings";
+import "./Home.css"
 
 
 const Home = () => {
@@ -20,8 +19,8 @@ const Home = () => {
           <CircularSlider />
         </div>
         <div className="radio-container">
-          <div className="vinil-container">
-            <Vinil />
+          <div className="vinyl-container">
+            <Vinyl />
           </div>
           <div className="button-container" style={{ zIndex: 2, pointerEvents: 'auto' }}>
             <PlayButton />
@@ -29,11 +28,7 @@ const Home = () => {
         </div>
       </div>
       <div className="settings-container">
-        <div className="n-container">
-          <NavButton symbol={<>&#11164;</>}></NavButton>
-          <FavButton/>
-          <NavButton symbol={<>&#11166;</>}></NavButton>
-        </div>
+        <NavSettings />
         <div className="volume-container">
           <VolumeSettings />
         </div>
