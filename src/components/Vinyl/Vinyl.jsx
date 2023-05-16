@@ -1,4 +1,4 @@
-import vinylImage from '../../assets/vinyl-background.png'
+import vinylImage from '../../assets/vinyl-background-large.png'
 import "./Vinyl.css"
 
 const Vinyl = () => {
