@@ -1,19 +1,44 @@
 .play-button {
-  width: 100px;
-  height: 100px;
-  border-radius: 50%;
-  background-color: #cddae2;
+  /* width: 100px; */
+  /* height: 100px; */
+  /* border-radius: 50%; */
+  /* background-color: #cddae2; */
   cursor: pointer;
   pointer-events: auto;
   position: absolute;
   top: 50%;
-  left: 50%;
+  left: 55%;
   transform: translate(-50%, -50%);
+
+  /* Play/Pause */
+  border: 0;
+  background: transparent;
+  box-sizing: border-box;
+  width: 0;
+  height: 74px;
+
+  border-color: transparent transparent transparent #202020;
+  transition: 100ms all ease;
+  cursor: pointer;
+
+  /* play state */
+  border-style: solid;
+  border-width: 37px 0 37px 60px;
+
+  &.paused {
+    border-style: double;
+    border-width: 0px 0 0px 60px;
+    margin-left: -3%;
+  }
+
+  &:hover {
+    border-color: transparent transparent transparent #404040;
+  }
 }
 
 .surround-button {
-  width: 150px;
-  height: 150px;
+  width: 215px;
+  height: 215px;
   shape-outside: circle();
   clip-path: circle();
   background: rgb(49, 48, 48);
@@ -21,7 +46,7 @@
 }
 
 /* Play button properties using CSS shape */
-.play-button::before {
+/* .play-button::before {
   content: "";
   display: block;
   position: absolute;
@@ -33,4 +58,4 @@
   top: 50%;
   left: 53%;
   transform: translate(-50%, -50%);
-}
+} */

@@ -1,0 +1,10 @@
+.nav-button {
+  font-family: "Segoe UI Symbol", sans-serif;
+  width: 30px;
+  height: 30px;
+  border-radius: 50%;
+  background-color: #cddae2;
+  cursor: pointer;
+  pointer-events: auto;
+  position: relative;
+}

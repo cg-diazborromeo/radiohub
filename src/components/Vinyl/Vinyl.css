@@ -1,0 +1,10 @@
+.round-vinyl {
+  border-radius: 50%;
+  height: 400px;
+  position: relative;
+  /* top: 100%;
+  left: 62%; */
+  /* margin-top: -25px;
+  margin-left: -200px; */
+  /* overflow: auto; */
+}

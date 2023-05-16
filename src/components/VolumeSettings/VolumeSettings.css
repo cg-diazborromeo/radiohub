@@ -1,0 +1,9 @@
+.label-container {
+  width: 28px;
+  height: 18px;
+  background-color: #cddae2;
+  border-radius: 50%;
+  border: 1.5px solid black;
+  justify-content: center;
+  position: relative;
+}
